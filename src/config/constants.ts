@@ -9,3 +9,4 @@ export const RETELL_API_KEY_3MT = process.env.RETELL_API_KEY_3MT || 'agregarelac
 export const HOSTNAME = process.env.HOSTNAME || `http://localhost:${PORT}`;
 export const HOSTWEB = process.env.HOSTWEB || 'http://127.0.0.1:5173';
 export const TZ = process.env.TZ || 'America/Guayaquil';
+export const SECRETORPRIVATEKEY = process.env.SECRETORPRIVATEKEY || 'a4pliCacionD3w3-|_|';
