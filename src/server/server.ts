@@ -57,7 +57,7 @@ class Server {
         this.app.use(express.urlencoded({extended: true}));
 
         //Capeta Pública
-        this.app.use(express.static(path.join(__dirname, '../public')));
+        this.app.use('/api', express.static(path.join(__dirname, '../public')));
         // this.app.use(express.static('public'));
 
         this.app.use(
