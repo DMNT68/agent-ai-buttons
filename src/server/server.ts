@@ -5,7 +5,6 @@ import morgan from 'morgan';
 import cors from 'cors';
 import fileUpload from 'express-fileupload';
 
-import {errorMiddleware} from '../middleware/errorMiddleware';
 import {NODE_ENV, PORT, TZ} from '../config/constants';
 import {findAvailablePort} from '../plugins/free-port';
 import {router} from '../routes';
