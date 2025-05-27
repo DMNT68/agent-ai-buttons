@@ -12,7 +12,7 @@ const limiter = rateLimit({
 
 export const router = Router();
 
-router.use('/aiconnect', appRouter);
+router.use('/aiconnect', limiter, appRouter);
 
 router.use(errorMiddleware);
 router.use((req: Request, res: Response) => {
