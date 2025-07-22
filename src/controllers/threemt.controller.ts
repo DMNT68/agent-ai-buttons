@@ -1,7 +1,7 @@
 import {Request, Response} from 'express';
 import {customeResponse} from '../common/customResponses';
 import {httpClientPlugin} from '../plugins/http-client.plugin';
-import { RETELL_API_KEY_3MT } from '../config/constants';
+import { RETELL_API_KEY_3MT, RETELL_API_KEY_AIC } from '../config/constants';
 
 
 export class ThreemtController {
@@ -22,7 +22,7 @@ export class ThreemtController {
 
         const response = await httpClientPlugin.post('https://api.retellai.com/v2/create-web-call', payload, {
             headers: {
-                Authorization: `Bearer ${RETELL_API_KEY_3MT}`, // Replace with your actual Bearer token
+                Authorization: `Bearer ${RETELL_API_KEY_AIC}`, // Replace with your actual Bearer token
                 'Content-Type': 'application/json',
             },
         });
